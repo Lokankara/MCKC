@@ -8,6 +8,13 @@ public class HomeController {
 
     @GetMapping("/home")
     public String goHome(){
+        System.out.println("goHome");
         return "index";
+    }
+
+    @GetMapping("/goToSearch")
+    public String goToSearch(){
+        System.out.println("goToSearch");
+        return "search";
     }
 }
