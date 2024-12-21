@@ -1,6 +1,6 @@
-package com.mvc.commence.controllers;
+package com.mvc.commerce.controllers;
 
-import com.mvc.commence.model.User;
+import com.mvc.commerce.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;

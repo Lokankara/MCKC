@@ -1,4 +1,4 @@
-package com.mvc.commence.model;
+package com.mvc.commerce.model;
 
 public enum Gender {
     Male,

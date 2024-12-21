@@ -1,6 +1,6 @@
-package com.mvc.commence.service;
+package com.mvc.commerce.service;
 
-import com.mvc.commence.model.Product;
+import com.mvc.commerce.model.Product;
 
 import java.util.List;
 

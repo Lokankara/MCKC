@@ -1,7 +1,7 @@
-package com.mvc.commence.service;
+package com.mvc.commerce.service;
 
-import com.mvc.commence.dao.ProductDao;
-import com.mvc.commence.model.Product;
+import com.mvc.commerce.dao.ProductDao;
+import com.mvc.commerce.model.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.mvc.commence;
+package com.mvc.commerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

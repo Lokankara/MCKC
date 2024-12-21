@@ -1,4 +1,4 @@
-package com.mvc.commence;
+package com.mvc.commerce;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

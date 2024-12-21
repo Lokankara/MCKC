@@ -1,7 +1,7 @@
-package com.mvc.commence.controllers;
+package com.mvc.commerce.controllers;
 
-import com.mvc.commence.dao.UserDao;
-import com.mvc.commence.model.User;
+import com.mvc.commerce.dao.UserDao;
+import com.mvc.commerce.model.User;
 import jakarta.validation.Valid;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;

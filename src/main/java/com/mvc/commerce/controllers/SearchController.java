@@ -1,7 +1,7 @@
-package com.mvc.commence.controllers;
+package com.mvc.commerce.controllers;
 
-import com.mvc.commence.model.Product;
-import com.mvc.commence.service.ProductService;
+import com.mvc.commerce.model.Product;
+import com.mvc.commerce.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

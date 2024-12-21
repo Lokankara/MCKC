@@ -1,4 +1,4 @@
-package com.mvc.commence.model;
+package com.mvc.commerce.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

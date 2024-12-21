@@ -1,6 +1,5 @@
-package com.mvc.commence;
+package com.mvc.commerce;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

@@ -1,6 +1,6 @@
-package com.mvc.commence.dao;
+package com.mvc.commerce.dao;
 
-import com.mvc.commence.model.User;
+import com.mvc.commerce.model.Product;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserDao extends CrudRepository<User, Integer> {
+public interface ProductDao extends CrudRepository<Product, Integer> {
+
     @Query("select p from Product p where p.name like %:name%")
-    List<User> searchByName(String name);
+    List<Product> searchByName(String name);
 }
