@@ -7,31 +7,34 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 @Controller
 public class HomeController {
 
+    Logger logger = Logger.getLogger(getClass().getName());
+
     @GetMapping("/home")
     public String goHome() {
-        System.out.println("goHome");
+        logger.info("goHome");
         return "index";
     }
 
     @GetMapping("/goToSearch")
     public String goToSearch() {
-        System.out.println("goToSearch");
+        logger.info("goToSearch");
         return "search";
     }
 
     @GetMapping("/goToLogin")
     public String goToLogin() {
-        System.out.println("goToLogin");
+        logger.info("goToLogin");
         return "login";
     }
 
     @GetMapping("/goToRegistration")
     public String goToRegistration() {
-        System.out.println("goToRegistration");
+        logger.info("goToRegistration");
         return "register";
     }
 

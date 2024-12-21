@@ -27,7 +27,7 @@
 			</div>
 			<!-- container nav-elements -->
 		</nav>
-		
+
 		<!-- <div class="container tagline">
     <h1 class="headline">Our Mission</h1>
     <p>We support and encourage <em>active and healthy</em> lifestyles, by offering <em>ethically sourced</em> and <em>eco-friendly</em> nutritional products for the <em>performance-driven</em> athlete.</p>
@@ -38,23 +38,39 @@
 	<section id="registration" class="section">
 	 <div class="container tagline">
 	 <em>Register User</em><br/>
-    		 <form:form method="post" action="/registerUser" modelAttribute="newuser">
-    			<label>Username</label> <form:input path="username" type="text" /><br/>
-    			<label>Password</label> <form:input path="password" type="password" /><br/>
-    			<label>First Name</label> <form:input path="firstName" type="text" /><br/>
-    			<label>Last Name</label> <form:input path="lastName" type="text" /><br/>
-    			<label>What do you want to do? </label> 
+<form:form method="post" action="/registerUser" modelAttribute="newuser">
+    <label>First Name</label>
+    <form:input path="firstName" type="text" />
+    <form:errors path="firstName" cssClass="error" />
+    <br/>
+
+    <label>Last Name</label>
+    <form:input path="lastName" type="text" />
+    <form:errors path="lastName" cssClass="error" />
+    <br/>
+
+    <label>Password</label>
+    <form:input path="password" type="password" />
+    <form:errors path="password" cssClass="error" />
+    <br/>
+
+<label>What do you want to do? </label>
 				<form:radiobutton path="activity" id="activity" value="sport"/>Play a Sport?
-				<form:radiobutton path="activity" id="activity" value="gym"/>Hit the Gym?<br/>
+				<form:radiobutton path="activity" id="activity" value="gym"/>Hit the Gym?
+				<form:errors path="activity" cssClass="error"/><br/>
     			<label>Date of birth</label>
-    			<form:input path="dateOfBirth" type="date" /><br/>
-    			<label>Gender</label>
-    			<form:select path="gender" items="${genderItems}"/>
+    			<form:input path="dateOfBirth" type="date" />
+    			<form:errors path="dateOfBirth" cssClass="error"/>
     			<br/>
+    			<label>Gender</label>
+                <form:select path="gender">
+                    <form:options items="${genderItems}" />
+                </form:select>
+                <br/>
     			<input type="submit" value="Submit" id="submit">
     		</form:form>
 		</div>
-	</section>
+			</section>
 	<footer class="footer">
 		<div class="container">
 			<nav class="nav" role="navigation">
